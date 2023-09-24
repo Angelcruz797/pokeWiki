@@ -1,11 +1,15 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { PokeWiki } from './PokeWiki'
+import { BrowserRouter } from 'react-router-dom'
+import { PokeApp } from './PokeApp'
 import './styles.css'
 
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <PokeWiki />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <React.StrictMode>
+      <PokeApp />
+    </React.StrictMode>
+  </BrowserRouter>,
+    
 )

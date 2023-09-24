@@ -1,22 +1,24 @@
-export const getPokeApi =async(pokemon)=>{
 
+export const getPokeByName =async(pokemon)=>{
     try {
 
         const url=`https://pokeapi.co/api/v2/pokemon/${pokemon}`
 
     const resp=await fetch(url);
     const {sprites,abilities,name,id,types}=await resp.json();
-    
+
     const jData={
-        name:name,
+        name,
         sprites:{...sprites},
         abilities:[...abilities],
-        id:id,
-        types:[...types]
+        id,
+        types:[...types],
     }
-    return jData
+    console.log(jData)
+    return {jData}
         
     } catch (error) {
         console.error(error)
+        return {jData:undefined}
     }
 }
