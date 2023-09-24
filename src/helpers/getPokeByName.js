@@ -14,7 +14,6 @@ export const getPokeByName =async(pokemon)=>{
         id,
         types:[...types],
     }
-    console.log(jData)
     return {jData}
         
     } catch (error) {

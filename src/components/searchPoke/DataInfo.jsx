@@ -1,9 +1,8 @@
 
 export const DataInfo = ({name,sprites,abilities,id,types}) => {
     // console.log(abilities)
-
   return (
-    <div className="data-poke">
+    <div className="data-poke" key={id}>
 
         <h3>{name} <span>#{id}</span></h3>
 
@@ -15,13 +14,15 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
             <img src={sprites.back_default}/>
         </div>
 
-        <hr />
+        {sprites.front_shiny && <>
+            <hr />
 
-        <div className=" container "> 
-            <h4> {name} shiny:</h4>
-            <img src={sprites.front_shiny}/>
-            <img src={sprites.back_shiny}/>
-        </div>
+            <div className=" container "> 
+                <h4> {name} shiny:</h4>
+                <img src={sprites.front_shiny}/>
+                <img src={sprites.back_shiny}/>
+            </div>
+        </>}
 
         <hr />
 
