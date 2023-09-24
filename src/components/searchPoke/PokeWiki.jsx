@@ -13,7 +13,7 @@ export const PokeWiki = () => {
   return (
     <>
       <div className="container-search">
-        <h1>Poke Wiki</h1>
+        <h2>Poke Wiki</h2>
         <SearchPokemon setPokemon={setPokemon}/>
 
         {pokemon.map(poke=><PokeData key={poke} pokemon={poke} />)}
