@@ -1,6 +1,5 @@
 .container-search{
   margin: 0 40px 0 10px;
-  padding-top: 30px;
 }
 
 input {
@@ -94,6 +93,12 @@ input {
     margin-right:20px;
 }
 
-.container p{
+.container a{
     margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+.container a:hover{
+  text-decoration: underline;
 }

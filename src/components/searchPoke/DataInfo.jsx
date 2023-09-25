@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 
 export const DataInfo = ({name,sprites,abilities,id,types}) => {
     // console.log(abilities)
@@ -29,7 +30,10 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
         <div className="container ">
             <h4>types:</h4>
             <span className="all-Column">
-                {types.map(({type})=><p key={type.name}>{type.name}</p>)} 
+                {types.map(({type})=>{
+                const url=type.url.split('/')
+                return <Link to={'/types/'+url[6]} key={type.name}>{type.name}</Link>
+            })} 
             </span>
         </div>
 

@@ -11,8 +11,7 @@ export const SearchPokemon = ({setPokemon}) => {
 
     const onSubmit=(event)=>{
         event.preventDefault()
-        const newInputValue=inputValue.trim()
-        newInputValue.toLocaleLowerCase()
+        const newInputValue=inputValue.trim().toLowerCase()
         if(newInputValue.length<1)return
         setPokemon([newInputValue])
 
@@ -24,7 +23,7 @@ export const SearchPokemon = ({setPokemon}) => {
     <>
         <form onSubmit={onSubmit}>
             <input
-                placeholder="Busca a el pokemon"
+                placeholder="Search a pokemon"
                 value={inputValue}
                 onChange={onInputChange}
             />

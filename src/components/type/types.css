@@ -28,3 +28,16 @@
     text-decoration: none;
     color: #000000;
 }
+.container-realtions p{
+    margin-left: 10px;
+    color: #000000;
+    display: inline;
+}
+
+@media (max-width:727px) {
+    .container-types{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(5,50px);
+        padding: 0 10px 0 20px;
+    }    
+}
