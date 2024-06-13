@@ -11,7 +11,7 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
 
         <div className=" container "> 
             <h4> {name} default:</h4>
-            <img src={sprites.front_default}/>
+            <img src={sprites.other.showdown.front_default}/>
             <img src={sprites.back_default}/>
         </div>
 
