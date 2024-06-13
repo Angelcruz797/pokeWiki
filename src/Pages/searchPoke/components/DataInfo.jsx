@@ -21,7 +21,7 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
             <span className="all-Column">
                 {types.map(({type})=>{
                 const url=type.url.split('/')
-                return <Link to={'/types/'+url[6]} key={type.name} className={`type ${type.name}`}>{type.name}</Link>
+                return <Link to={'/types/'+url[6]} key={type.name} className={`types ${type.name}`}>{type.name}</Link>
             })} 
             </span>
         </div>
