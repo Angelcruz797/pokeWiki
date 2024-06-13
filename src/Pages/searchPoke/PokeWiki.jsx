@@ -1,6 +1,6 @@
 import { useState } from "react"
-import { SearchPokemon } from "./SearchPokemon"
-import { PokeData } from "./PokeData";
+import { SearchPokemon } from "./components/SearchPokemon"
+import { PokeData } from "./components/PokeData";
 import './search.css'
 
 

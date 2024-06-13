@@ -1,5 +1,5 @@
 import { DataInfo } from "./DataInfo"
-import { useGetPoke } from "../../hook/useGetPoke"
+import { useGetPoke } from "../../../hook/useGetPoke"
 
 export const PokeData = ({pokemon}) => {
     const {dataPokemon,isLoading}= useGetPoke(pokemon);

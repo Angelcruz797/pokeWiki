@@ -5,25 +5,14 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
   return (
     <div className="data-poke" key={id}>
 
-        <h3>{name} <span>#{id}</span></h3>
+        {/* <div className="mini-poke"><img src={sprites.other.showdown.front_default}/></div> */}
 
-        <hr />
 
-        <div className=" container "> 
-            <h4> {name} default:</h4>
-            <img src={sprites.other.showdown.front_default}/>
-            <img src={sprites.back_default}/>
+        <div className="container"> 
+            <img src={sprites.other.dream_world.front_default}/>
         </div>
 
-        {sprites.front_shiny && <>
-            <hr />
-
-            <div className=" container "> 
-                <h4> {name} shiny:</h4>
-                <img src={sprites.front_shiny}/>
-                <img src={sprites.back_shiny}/>
-            </div>
-        </>}
+        <h3>{name}  <span>#{id}</span></h3>
 
         <hr />
 
@@ -32,7 +21,7 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
             <span className="all-Column">
                 {types.map(({type})=>{
                 const url=type.url.split('/')
-                return <Link to={'/types/'+url[6]} key={type.name}>{type.name}</Link>
+                return <Link to={'/types/'+url[6]} key={type.name} className={`type ${type.name}`}>{type.name}</Link>
             })} 
             </span>
         </div>

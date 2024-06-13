@@ -1,8 +1,8 @@
 import { NavLink, Route, Routes } from "react-router-dom"
-import { LobbyPoke } from "./components/LobbyPoke"
-import { PokeWiki } from "./components/searchPoke/PokeWiki"
+import { LobbyPoke } from "./Pages/lobby/LobbyPoke"
+import { PokeWiki } from "./Pages/searchPoke/PokeWiki"
 import './styles.css'
-import { TypeInfo,Types } from "./components/type/"
+import { TypeInfo,Types } from "./pages/type/"
 export const PokeApp = () => {
 
     
