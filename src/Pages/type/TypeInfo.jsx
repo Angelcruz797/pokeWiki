@@ -22,7 +22,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.double_damage_from.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={'../types/'+url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={'../types/'+url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
@@ -32,7 +32,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.double_damage_to.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
@@ -42,7 +42,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.half_damage_from.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
@@ -52,7 +52,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.half_damage_to.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
@@ -62,7 +62,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.no_damage_from.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
@@ -72,7 +72,7 @@ export const TypeInfo = () => {
             <ul>
               {damage_relations.no_damage_to.map(type=>{
                 const url=type.url.split('/');
-                return( <p to={url[6]} key={url[6]}>{type.name}</p>)
+                return( <p className={`types ${type.name}`} to={url[6]} key={url[6]}>{type.name}</p>)
               })}
             </ul>
           </div>}
