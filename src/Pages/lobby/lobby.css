@@ -1,0 +1,135 @@
+.container-pokes{
+    display: grid;
+    /* margin: auto; */
+    grid-template-areas:
+    "banner banner banner banner"
+    "more_pokes more_pokes more_pokes more_pokes"
+    ;
+    grid-template-rows: auto;
+    gap: 30px;
+    padding-bottom: 30px;
+    height: auto;
+}
+.more-pokes{
+    grid-area: more_pokes;
+    text-align: center;
+    margin:0 auto !important;
+    padding-bottom: 20px;
+
+}
+.container-banner{
+    grid-area: banner;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.banners{
+    display: grid;
+    grid-template-areas: 
+    "name id"
+    "type img"
+    ;
+    grid-template-columns: 50% 50%;
+    justify-content: end;
+    align-items: start;
+    padding: 10px;
+    width: 350px;
+    height: 220px;
+    margin: 20px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.banners h2{
+    grid-area: name;
+    line-height: 80px;
+}
+.banners h4{
+    grid-area: id;
+    width: 100%;
+    text-align: end;
+    line-height: 80px;
+    font-size: 25px;
+}
+.banners img{
+    width: 100px;
+    height: 100px;
+    grid-area: img;
+}
+.container-icons{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: start;
+    grid-area: type;
+}
+
+
+.bIcon{
+    width: 40px;
+    height: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bIcon-dark{
+    background-image: url("./img/120px-Pokémon_Dark_Type_Icon.svg.png");
+}
+.bIcon-grass{
+    background-image: url("./img/64px-Grass_icon_SwSh.png");
+}
+.bIcon-ground{
+    background-image: url("./img/120px-Pokémon_Ground_Type_Icon.svg.png");
+}
+.bIcon-fire{
+    background-image: url("./img/120px-Fire_icon_SwSh.png");
+}
+.bIcon-normal{
+    background-image: url("./img/Pokémon_Normal_Type_Icon.svg.png");
+}
+.bIcon-steel{
+    background-image: url("./img/Pokémon_Steel_Type_Icon.svg.png");
+}
+.bIcon-water{
+    background-image: url("./img/Pokémon_Water_Type_Icon.svg.png");
+}
+.bIcon-dragon{
+    background-image: url("./img/120px-Dragon_icon_SwSh.png");
+}
+.bIcon-electric{
+    background-image: url("./img/Pokémon_Electric_Type_Icon.svg.png");
+}
+.bIcon-fighting{
+    background-image: url("./img/Pokémon_Fighting_Type_Icon.svg.png");
+}
+.bIcon-fairy{
+    background-image: url("./img/Pokémon_Fairy_Type_Icon.svg.png");
+}
+.bIcon-psychic{
+    background-image: url("./img/Pokémon_Psychic_Type_Icon.svg.png");
+}
+.bIcon-rock{
+    background-image: url("./img/120px-Pokémon_Rock_Type_Icon.svg.png");
+}
+.bIcon-ice{
+    background-image: url("./img/120px-Pokémon_Ice_Type_Icon.svg.png");
+}
+.bIcon-poison{
+    background-image: url("./img/Pokémon_Poison_Type_Icon.svg.png");
+}
+.bIcon-bug{
+    background-image: url("./img/64px-Bug_icon_SwSh.png");
+}
+.bIcon-flying{
+    background-image: url("./img/64px-Flying_icon_SwSh.png");
+}
+
+@media (max-width:750px) {
+    .banners{
+        margin: 20px 0;
+        width: 80%;
+    }
+}
