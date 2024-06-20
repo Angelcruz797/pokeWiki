@@ -8,12 +8,14 @@
   body{
     background-color: rgb(234, 234, 234);
   }
-
+.navigate{
+  margin: 5px;
+}
 .nav-link p{
   background-color: #004e5f;
   color: #ffffff;
-  height: 30px;
-  line-height: 30px;
+  height: 40px;
+  line-height: 40px;
   width: 150px;
   display: inline-block;
   text-decoration: none;
@@ -112,4 +114,19 @@
 
 .shadow{
   background-color: #ad8;
+}
+
+@media (max-width:750px) {
+  .navigate{
+    display: flex;
+    flex-direction: row;
+    overflow:auto;
+    scrollbar-width: none;
+  }
+  .nav-link p{
+    width: 120px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
 }

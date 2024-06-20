@@ -8,21 +8,23 @@ export const PokeApp = () => {
     
   return (
     <>
-    <NavLink 
-    className={({isActive})=>`nav-link ${isActive? 'active':''}`}
-    to='/'>
-        <p>lobby</p>
-    </NavLink>
-    <NavLink 
-    className={({isActive})=>`nav-link ${isActive? 'active':''}`}
-    to='/search-poke'>
-        <p>Search Pokemon</p>
-    </NavLink>
-    <NavLink 
-    className={({isActive})=>`nav-link ${isActive? 'active':''}`}
-    to='/types'>
-        <p>Types</p>
-    </NavLink>
+    <nav className="navigate">
+        <NavLink 
+        className={({isActive})=>`nav-link ${isActive? 'active':''}`}
+        to='/'>
+            <p>lobby</p>
+        </NavLink>
+        <NavLink 
+        className={({isActive})=>`nav-link ${isActive? 'active':''}`}
+        to='/search-poke'>
+            <p>Search Pokemon</p>
+        </NavLink>
+        <NavLink 
+        className={({isActive})=>`nav-link ${isActive? 'active':''}`}
+        to='/types'>
+            <p>Types</p>
+        </NavLink>
+    </nav>
     
         <Routes>
             <Route path="/" element={<LobbyPoke/>}/>
