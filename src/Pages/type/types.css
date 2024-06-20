@@ -28,6 +28,12 @@
     text-decoration: none;
     color: #000000;
 }
+.container-realtions{
+    margin: 20px 0;
+}
+.container-realtions h4{
+    margin: 10px 0;
+}
 .container-realtions p{
     margin-left: 10px;
     color: #000000;
