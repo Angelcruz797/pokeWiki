@@ -9,7 +9,7 @@ export const DataInfo = ({name,sprites,abilities,id,types}) => {
 
 
         <div className="container"> 
-            <img src={sprites.other.dream_world.front_default}/>
+            <img src={sprites.other.dream_world.front_default || sprites.front_default}/>
         </div>
 
         <h3>{name}  <span>#{id}</span></h3>
